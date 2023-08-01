@@ -11,7 +11,6 @@ export default function MenuCard({ menu }) {
         <img src={image} alt={name} />  
       </div>
       <div className="brief">{shortDescription}</div>
-      <div className="price">Price: <span>${price.toFixed(2)}</span></div>
       <div className="toppings">
         Toppings:
         {toppings.map((topping, index) => (
@@ -20,6 +19,7 @@ export default function MenuCard({ menu }) {
           </span>
         ))}
       </div>
+      <div className="price">Price: <span>${price.toFixed(2)}</span></div>
     </div>
   );
 }

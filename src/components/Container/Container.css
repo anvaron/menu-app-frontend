@@ -1,14 +1,6 @@
 .Container {
     width: 80vw;
     height: 80vh;
-    overflow-y: scroll;
+    margin: auto;
     background-color: #FFF;
-    border-radius: 5px;
-}
-
-.Container--center {
-    /* display: grid;
-    align-items: center;
-    justify-content: center;
-    background-color: #EEE; */
 }

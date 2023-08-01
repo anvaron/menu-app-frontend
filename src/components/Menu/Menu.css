@@ -1,4 +1,5 @@
 .Menu__content {
+  
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -10,11 +11,13 @@
 }
 .Menu__search input {
   width: 100%;
-  padding: 0.2rem;
+  padding: 0.4rem;
   margin: 1rem 0;
-  border: 0.5rem solid #8c91d4;
+  border: 0.2rem solid #787cbb;
+  background-color: #c2c5f1;
   border-radius: 0.4rem;
   font-size: 1.4rem;
+  color: #787cbb;
 }
 
 .Menu__noResult {

@@ -1,21 +1,27 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Parisienne&display=swap'); */
 .App {
-  display: grid;
+  width: 100vw;
+  height: 100vh;
+  /* display: grid; */
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  
   background-color: #FFFFFF;
 }
 .title {
   padding: 1rem 0;
-  margin: 1rem 0 0 0;
+  margin: 0rem 0 0 0;
   text-align: center;
+  font-size: 3rem;
+  font-family: 'Parisienne', cursive;
   letter-spacing: 0.8rem;
-  background-color: gold;
+  background-color: rgb(236, 225, 163);
 }
 .sub__title {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
   text-align: center;
 }
