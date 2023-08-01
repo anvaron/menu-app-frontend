@@ -1,0 +1,32 @@
+.card {
+  padding: 1rem;
+  border: solid 1rem #97b3da;
+  background-color: #c7daeb;
+  border-radius: 0.4rem;
+}
+
+.card .name {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #6c93c9;
+}
+.card .brief {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card .price {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.card .price {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}

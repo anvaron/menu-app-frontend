@@ -1,67 +1,56 @@
-import { useEffect, useState } from 'react';
-import './App.css';
-import Container from './components/Container/Container';
-import Error from './components/Error/Error';
-import Loading from './components/Loading/Loading';
-import StudentList from './components/StudentList/StudentList';
+import { useEffect, useState } from "react";
+import "./App.css";
+import Menu from "./components/Menu/Menu";
+import Loading from "./components/Loading/Loading";
+import Error from "./components/Error/Error";
+import Container from "./components/Container/Container";
 
 const API_URL = process.env.REACT_APP_API_URL;
 
 function App() {
-  const [studentData, setStudentData] = useState([]);
+  const [menuData, setMenuData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    console.log('<App /> useEffect() fired');
     async function fetchData() {
       try {
-        // Remove any errors from previous attempts
-        setError('');
-        // Show the user that we're loading...
+        setError("");
         setLoading(true);
-        const response = await fetch(`${API_URL}/students`);
+        const response = await fetch(`${API_URL}/items`);
         const json = await response.json();
-        console.log('<App /> useEffect() fetched data', json);
         const { data, error } = json;
+        console.log(response)
         if (response.ok) {
-          // handle success
-          setStudentData(data);
-          // Stop showing the user the loading UI...
+          setMenuData(data);
           setLoading(false);
         } else {
-          // handle error
           setError(error);
           setLoading(false);
         }
       } catch (err) {
-        console.log(`<App /> useEffect error: ${err.message}`);
-        setError(err.message);
+        console.log(`<App /> useEffect error : ${err.message}`);
         setLoading(false);
+        setError(err.message);
       }
     }
     fetchData();
   }, []);
 
-  /* If loading, render <Loading />
-    else if error, render <Error error={error} />
-    else render <StudentList />
-  */
   const renderContent = () => {
     if (loading) {
       return <Loading />;
     } else if (error) {
       return <Error error={error} />;
     } else {
-      return <StudentList studentData={studentData} />;
+      return <Menu menuData={menuData} />;
     }
   };
-  console.log(
-    `<App /> rendered! error= ${error} loading = ${loading} num students = ${studentData.length}`
-  );
   return (
     <div className="App">
-      <Container center={Boolean(error || loading)} scroll={false}>
+      <h1 className="title">Ristorante La'Italie</h1>
+      <h4 className="sub__title">Menu</h4>
+      <Container center={Boolean(error || loading)}>
         {renderContent()}
       </Container>
     </div>

@@ -1,14 +1,14 @@
-import './Error.css';
+import React from "react";
+import "./Error.css";
 
-const Error = ({ error }) => {
-  console.log(`<Error /> rendered! error=${error}`);
+export default function Error({ error }) {
   return (
     <div className="Error">
-      There was an error: {error}
+      There was and error: oh no
+      <br />
+      Error message: {error}
       <br />
       Please refresh the page or contact support.
     </div>
   );
-};
-
-export default Error;
+}

@@ -1,0 +1,26 @@
+.Menu__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.Menu__search {
+  width: 25%;
+  margin: 1rem auto;
+}
+.Menu__search input {
+  width: 100%;
+  padding: 0.2rem;
+  margin: 1rem 0;
+  border: 0.5rem solid #8c91d4;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.Menu__noResult {
+  display: grid;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}

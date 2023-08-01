@@ -1,8 +1,6 @@
-import './Loading.css';
+import React from "react";
+import "./Loading.css";
 
-const Loading = () => {
-  console.log(`<Loading /> rendered!`);
-  return <div className="Loading">Loading...</div>;
-};
-
-export default Loading;
+export default function () {
+  return <div className="Loading">Loading items...</div>;
+}
