@@ -33,6 +33,24 @@
   border-radius: 0.4rem;
   box-shadow: 0px 0px 8px 4px #d4a373;
 }
+.card .toppings {
+  margin: 1rem 0;
+  font-size: 1.0rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  color: #1b4965;
+}
+.card .toppings p {
+  margin: 0.1rem 0 0.1rem 0.5rem;
+  font-size: 1.0rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #7f7f7f;
+}
+.card .toppings span {
+  font-weight: 600;
+  color: #7f7f7f;
+}
 .card .price {
   margin: 0;
   font-size: 1.2rem;

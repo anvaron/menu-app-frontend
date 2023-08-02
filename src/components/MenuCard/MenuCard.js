@@ -16,9 +16,9 @@ export default function MenuCard({ menu }) {
         Toppings:
         {toppings.length ? (
           toppings.map((topping, index) => (
-            <span key={index}>
-              {`${(topping ? ` ${topping} ` : "") }`}
-            </span>
+            <p key={index}>
+              {`${(topping ? `+ ${topping}` : "") }`}
+            </p>
           ))
         ) : (
           <span>{' None '}</span>
