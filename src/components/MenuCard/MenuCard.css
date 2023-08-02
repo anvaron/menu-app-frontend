@@ -1,10 +1,10 @@
 .card {
   padding: 1rem;
   border: solid 1.4rem #fff;
-  background-color: #e3f2fd;
+  background-color: #fefae0;
   border-radius: 0.4rem;
   /* position: relative; */
-  box-shadow: 0px 0px 8px 4px #97b3da;
+  box-shadow: 0px 0px 6px 2px #97b3da;
 }
 
 .card .name {
@@ -23,13 +23,15 @@
   font-size: 1.2rem;
   font-family: 'Inter', sans-serif;
   font-style: italic;
+  font-weight: 800;
+  color: #5fa8d3;
 }
 .card img {
   width: 100%;
   height: auto;
   position: relative;
   border-radius: 0.4rem;
-  box-shadow: 0px 0px 8px 4px #97b3da;
+  box-shadow: 0px 0px 8px 4px #d4a373;
 }
 .card .price {
   margin: 0;
@@ -41,10 +43,11 @@
   margin: 0.5rem 0 0 0;
   padding: 0.2rem 0.6rem;
   display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   color: #FFF;
-  background-color: #ffa69e
+  background-color: #1b4965;
+  border-radius: 0.2rem;
 }
 .card .price span {font-weight: 800;}
